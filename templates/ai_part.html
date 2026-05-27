@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h2>Part {{ part|capitalize }}</h2>
+  <p>Select a chapter to begin:</p>
+
+  {% if chapters %}
+    <ul>
+      {% for chapter in chapters %}
+        <li>
+          <a href="{{ url_for('ai_chapter_in_part', part=chapter.part, post_id=chapter.id) }}">
+            {{ chapter.title }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No chapters available for this part.</p>
+  {% endif %}
+
+  <p><a href="{{ url_for('ai_index') }}">← Back to AI Parts</a></p>
+{% endblock %}

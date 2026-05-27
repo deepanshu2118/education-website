@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- Hero Section -->
+<section class="hero">
+    <h1>Welcome to Math + AI Learning Hub</h1>
+    <p>Your go-to place for tutorials, notes, and AI tools for students & researchers.</p>
+    <a href="/blog" class="btn">Explore Blog</a>
+</section>
+
+<!-- About with Image Section -->
+<section class="about">
+    <div class="about-container">
+        <div class="about-text">
+            <h2>Why Math + AI?</h2>
+            <p>
+                Mathematics is the language of Artificial Intelligence. 
+                From linear algebra powering neural networks, to probability guiding machine learning, 
+                this hub helps you build strong foundations with practical insights. 
+            </p>
+            <p>
+                🚀 Whether you are in school (Class 9-12), a college student, or a researcher, 
+                we have structured learning paths for you.
+            </p>
+        </div>
+        <div class="about-image">
+            <img src="{{ url_for('static', filename='images/ai_math.png') }}" alt="Math and AI Illustration">
+        </div>
+    </div>
+</section>
+
+<!-- Topics Section -->
+<section class="topics">
+    <h2>What You’ll Learn</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Linear Algebra</h3>
+            <p>Understand the foundation of vectors, matrices, and transformations.</p>
+        </div>
+        <div class="card">
+            <h3>Machine Learning</h3>
+            <p>Learn algorithms like Gradient Descent, Regression, and Neural Networks.</p>
+        </div>
+        <div class="card">
+            <h3>Statistics</h3>
+            <p>Master probability and statistics for building AI models.</p>
+        </div>
+    </div>
+</section>
+
+<!-- 🔹 New Section (Mathematics + AI Buttons) -->
+<section class="sections">
+    <h2>Choose Your Section</h2>
+    <div class="sections-buttons">
+        <a href="/mathematics" class="btn-section">📘 Mathematics</a>
+        <a href="/ai" class="btn-section">🤖 Artificial Intelligence</a>
+    </div>
+</section>
+
+<!-- Latest Articles Section -->
+<section class="latest">
+    <h2>Latest Articles</h2>
+    <ul>
+        <li><a href="#">📘 Introduction to Linear Algebra in AI</a></li>
+        <li><a href="#">📊 Probability & Statistics for Machine Learning</a></li>
+        <li><a href="#">📝 Class 9 Algebra Notes</a></li>
+    </ul>
+</section>
+
+<!-- Call to Action -->
+<section class="cta">
+    <h2>Start Your Math + AI Journey Today 🚀</h2>
+    <p>Join our community and explore the world of AI with strong mathematical foundations.</p>
+    <a href="/blog" class="btn">Get Started</a>
+</section>
+
+{% endblock %}

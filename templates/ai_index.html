@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="ai-section">
+  <div class="container">
+    <h1>Artificial Intelligence Learning Path</h1>
+    <p>Select a part to explore its chapters.</p>
+
+    <ul>
+      {% for key, name in parts.items() %}
+        <li>
+          <a href="{{ url_for('ai_part', part=key) }}">
+            Part {{ loop.index }}: {{ name }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+{% endblock %}

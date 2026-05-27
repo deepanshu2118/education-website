@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+  <h2>{{ title }}</h2>
+  <div class="chapter-content">
+    {{ content|safe }}
+  </div>
+  <p><a href="{{ url_for('ai_index') }}">⬅ Back to AI Learning Path</a></p>
+</div>
+{% endblock %}

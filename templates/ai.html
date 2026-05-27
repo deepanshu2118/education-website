@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="ai-section">
+  <div class="container">
+    <h1>Artificial Intelligence Learning Path</h1>
+    <p>Start from the foundations and move towards advanced AI concepts step by step.</p>
+
+    <!-- Part I -->
+    <div class="ai-part">
+      <h2>Part I: Foundations</h2>
+      <ul>
+        <li><a href="{{ url_for('ai_chapter', chapter_id='chapter1') }}">1. What is Machine Learning Actually?</a></li>
+        <li><a href="{{ url_for('ai_chapter', chapter_id='chapter2') }}">2. Types of Learning & Their Real-World Maps</a></li>
+        <li><a href="{{ url_for('ai_chapter', chapter_id='chapter3') }}">3. The Generalisation Imperative</a></li>
+        <li><a href="{{ url_for('ai_chapter', chapter_id='chapter4') }}">4. Data: The Raw Material</a></li>
+        <li><a href="{{ url_for('ai_chapter', chapter_id='chapter5') }}">5. Mathematical Groundwork</a></li>
+      </ul>
+    </div>
+
+    <!-- Part II -->
+    <div class="ai-part">
+      <h2>Part II: Supervised Learning in Depth</h2>
+      <ul>
+        <li><a href="{{ url_for('ai_chapter', chapter_id='chapter6') }}">6. Linear Models for Regression</a></li>
+        <li><a href="{{ url_for('ai_chapter', chapter_id='chapter7') }}">7. Linear Models for Classification</a></li>
+        <li><a href="{{ url_for('ai_chapter', chapter_id='chapter8') }}">8. K-Nearest Neighbours & Kernel Smoothers</a></li>
+        <li><a href="{{ url_for('ai_chapter', chapter_id='chapter9') }}">9. Tree-Based Models</a></li>
+        <li><a href="{{ url_for('ai_chapter', chapter_id='chapter10') }}">10. Support Vector Machines & Kernel Methods</a></li>
+        <li><a href="{{ url_for('ai_chapter', chapter_id='chapter11') }}">11. Bayesian Parametric Models</a></li>
+        <li><a href="{{ url_for('ai_chapter', chapter_id='chapter12') }}">12. Neural Networks Introduced</a></li>
+      </ul>
+    </div>
+
+    <!-- Part III -->
+    <div class="ai-part">
+      <h2>Part III: Unsupervised & Self-Supervised Learning</h2>
+      <ul>
+        <li><a href="{{ url_for('ai_chapter', chapter_id='chapter13') }}">13. Clustering Paradigms</a></li>
+        <li><a href="{{ url_for('ai_chapter', chapter_id='chapter14') }}">14. Dimensionality Reduction & Visualization</a></li>
+        <li><a href="{{ url_for('ai_chapter', chapter_id='chapter15') }}">15. Association Mining & Frequent Patterns</a></li>
+        <li><a href="{{ url_for('ai_chapter', chapter_id='chapter16') }}">16. Anomaly & Outlier Detection</a></li>
+      </ul>
+    </div>
+
+    <!-- Part IV -->
+    <div class="ai-part">
+      <h2>Part IV: Advanced & Specialized Topics</h2>
+      <ul>
+        <li><a href="{{ url_for('ai_chapter', chapter_id='chapter17') }}">17. Ensemble Methods Beyond Boosting</a></li>
+        <li><a href="{{ url_for('ai_chapter', chapter_id='chapter18') }}">18. Deep Learning Architectures</a></li>
+        <li><a href="{{ url_for('ai_chapter', chapter_id='chapter19') }}">19. Markov Decision Processes</a></li>
+        <li><a href="{{ url_for('ai_chapter', chapter_id='chapter20') }}">20. Metric, Similarity & Kernel Learning</a></li>
+        <li><a href="{{ url_for('ai_chapter', chapter_id='chapter21') }}">21. Causal Inference & Uplift Modelling</a></li>
+        <li><a href="{{ url_for('ai_chapter', chapter_id='chapter22') }}">22. Fairness, Accountability, Transparency & Ethics</a></li>
+      </ul>
+    </div>
+
+    <!-- Part V -->
+    <div class="ai-part">
+      <h2>Part V: Practice & Deployment</h2>
+      <ul>
+        <li><a href="{{ url_for('ai_chapter', chapter_id='chapter23') }}">23. Feature Engineering & Domain Knowledge</a></li>
+        <li><a href="{{ url_for('ai_chapter', chapter_id='chapter24') }}">24. Model Selection & Tuning Strategies</a></li>
+        <li><a href="{{ url_for('ai_chapter', chapter_id='chapter25') }}">25. Performance Evaluation & Error Analysis</a></li>
+        <li><a href="{{ url_for('ai_chapter', chapter_id='chapter26') }}">26. Scaling, Pipelines & MLOps</a></li>
+        <li><a href="{{ url_for('ai_chapter', chapter_id='chapter27') }}">27. Case Studies (End-to-End)</a></li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+{% endblock %}

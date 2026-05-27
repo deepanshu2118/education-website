@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <header>
+    <h1>NCERT Class 12 - Chapter {{ chapter }}</h1>
+  </header>
+
+  <main class="chapter-content" data-chapter="{{ chapter }}">
+    {{ content | safe }}
+  </main>
+
+  <!-- ✅ Back to Chapters button -->
+  <div class="chapter-nav" style="margin-top: 20px; text-align: center;">
+    <a href="{{ url_for('section_1_ncert') }}" class="btn-section" style="display:inline-block; max-width:250px;">
+      ⬅ Back to Chapters
+    </a>
+  </div>
+
+{% endblock %}

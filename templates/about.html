@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- Hero Section -->
+<section class="hero">
+  <h1>About Us</h1>
+  <p>Building the bridge between <strong>Mathematics</strong> and <strong>Artificial Intelligence</strong> for future learners.</p>
+</section>
+
+<!-- About Content -->
+<section class="about-section">
+  <div class="about-container">
+    <!-- Left: Image -->
+    <div class="about-image">
+      <img src="{{ url_for('static', filename='images/about-ai_2.png') }}" alt="Mathematics and AI">
+    </div>
+
+    <!-- Right: Text -->
+    <div class="about-text">
+      <h2>Who We Are</h2>
+      <p>
+        We are passionate about making <b>complex concepts simple</b>.  
+        Our goal is to create a platform where students and learners can explore  
+        <b>Mathematics + Artificial Intelligence</b> through intuitive explanations,  
+        real-world applications, and innovative tools.
+      </p>
+
+      <h2>Our Mission</h2>
+      <p>
+        To empower students from <b>Class 9–12</b> and beyond with knowledge that connects  
+        traditional mathematics to the <b>future of AI</b>.  
+        We believe in <b>learning by understanding</b>, not memorizing.
+      </p>
+
+      <h2>Why Choose Us?</h2>
+      <ul>
+        <li>Clear explanations with visuals & examples</li>
+        <li>AI-powered problem-solving insights</li>
+        <li>Bridging school concepts to real-world applications</li>
+        <li>Step-by-step learning journey</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}  
+  <header>
+    <h1>Class 12 Mathematics</h1>
+  </header>
+
+<main class="math-sections">
+  <h2>Select Your Board</h2>
+  <div class="board-buttons">
+    
+    <a href="/mathematics/Class-12/ncert" class="board-card ncert">
+      <span class="icon">📘</span>
+      <h3>NCERT</h3>
+      <p>National Council of Educational Research and Training</p>
+    </a>
+
+    <a href="/mathematics/Class-12/cbse" class="board-card cbse">
+      <span class="icon">🏫</span>
+      <h3>CBSE</h3>
+      <p>Central Board of Secondary Education</p>
+    </a>
+
+    <a href="/mathematics/Class-12/icse" class="board-card icse">
+      <span class="icon">📖</span>
+      <h3>ICSE</h3>
+      <p>Indian Certificate of Secondary Education</p>
+    </a>
+
+  </div>
+</main>
+{% endblock %}
+

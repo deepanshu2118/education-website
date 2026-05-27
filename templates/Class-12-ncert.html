@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}  
+  <header>
+    <h1>NCERT Class 12 Mathematics</h1>
+  </header>
+
+  <main class="sections">
+    <h2>Select a Chapter</h2>
+    <div class="section-buttons">
+      {% for chapter in chapters %}
+        <a href="/mathematics/class-12/ncert/chapter-{{ chapter.num }}" class="btn-section sec{{ loop.index }}">
+          Chapter {{ chapter.num }}<br>
+          <small>{{ chapter.title }}</small>
+        </a>
+      {% endfor %}
+    </div>
+  </main>
+{% endblock %}
