@@ -211,7 +211,3 @@ def contact():
 if __name__ == "__main__":         # for the auto update on the server
     app.run(debug=True)
 
-
-from flask import Flask
-
-app = Flask(__name__)
