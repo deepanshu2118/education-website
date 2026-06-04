@@ -162,7 +162,8 @@ plyer==2.1.0
 preshed==3.0.10
 prometheus_client==0.20.0
 prompt-toolkit==3.0.43
-protobuf==4.25.3
+# protobuf==4.25.3
+protobuf==3.20.3
 prov==2.0.2
 psutil==5.9.8
 pure-eval==0.2.2
