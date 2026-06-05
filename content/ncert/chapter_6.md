@@ -106,3 +106,5 @@ Then f is said to be
 (b) f is decreasing in [a,b] if $f^{'}(x) \leq 0$ for each $x \implies (a,b)$
 
 (c) f is content function in [a,b] if $f^{'}(x) =0$ for each $x \implies (a,b)$
+
+**Example 8** Show that the function f given by f(x) = $x^3 -3x^2+4x$ , $x \in \mathbb{R}$
